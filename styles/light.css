@@ -9,4 +9,34 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-image: url("../images/cover-image-light.png");
+  --background-color: #fff1f7;
+  --accent-color: #ff8dcb;
+  --main-text-color: #353430;
+  --title-color: #ffc2e6;
+  --title-decor-text-color: #353430;
+  --decor-color: #353430;
+  --button-hover-border-color: rgba(53, 52, 48, 0.4);
+}
+
+:root.theme-light .header__text-rec {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-image: url("../images/cover-image-light.png");
+    --background-color: #fff1f7;
+    --accent-color: #ff8dcb;
+    --main-text-color: #353430;
+    --title-color: #ffc2e6;
+    --title-decor-text-color: #353430;
+    --decor-color: #353430;
+    --button-hover-border-color: rgba(53, 52, 48, 0.4);
+  }
+
+  /* В режиме «Авто» REC скрывается только при светлой системной теме. */
+  :root:not(.theme-dark) .header__text-rec {
+    display: none;
+  }
 }

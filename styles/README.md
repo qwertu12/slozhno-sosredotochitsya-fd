@@ -1,0 +1,1 @@
+https://github.com/qwertu12/slozhno-sosredotochitsya-fd
