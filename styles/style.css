@@ -82,6 +82,8 @@
   gap: 10px;
 }
 
+
+
 .header__theme-menu-button{
   border: 1px solid transparent;
   text-transform: lowercase;
@@ -170,6 +172,15 @@
   text-decoration: none;
   cursor: pointer;
   text-shadow: 2px 2px 0 var(--accent-color);
+  border-bottom: 1px solid transparent;
+}
+
+.content-card__link:hover{
+  border-bottom-color: currentColor;
+}
+
+.content-card__link:focus-visible{
+  outline: 1px solid currentColor;  
 }
 
 .content-section__subtitle{
